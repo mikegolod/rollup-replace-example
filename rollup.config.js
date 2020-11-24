@@ -8,7 +8,8 @@ export default {
 	},
 	plugins: [
 		replace({
-			SOME_URL: 'https://google.com',
+			// strings must have extra quotes
+			SOME_URL: "'https://google.com'",
 			delimiters: ['__', '__']
 		})
 	]
